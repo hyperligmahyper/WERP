@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Catscript", "GrapeTheme")
+local Window = Library.CreateLib("Catscript", "Deep")
 -- Make UI draggable
 task.wait(1)
 for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
@@ -63,6 +63,14 @@ end)
 Section:NewButton("Zombie lab (3) ", "bytehub", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/screengui/bytehub/refs/heads/main/loader.lua",true))()
     print("Clicked")
+end)
+Section:NewToggle("Tiger admin", "none", function(state)
+    if state then
+loadstring(game: HttpGet("https://rawscripts.net/raw/Prison-Life-Tiger-Admin-2025-33522")()
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
 end)
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
