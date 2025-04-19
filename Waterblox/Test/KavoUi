@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Catscript", "Deep")
+local Window = Library.CreateLib("Catscript", "GrapeTheme")
 -- Make UI draggable
 task.wait(1)
 for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
