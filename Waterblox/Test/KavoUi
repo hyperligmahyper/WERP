@@ -1,0 +1,84 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Catscript", "GrapeTheme")
+-- Make UI draggable
+task.wait(1)
+for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
+    if gui:FindFirstChild("Main") then
+        local main = gui:FindFirstChild("Main")
+        if main:IsA("Frame") then
+            main.Active = true
+            main.Draggable = true
+            print("UI is now draggable")
+        end
+    end
+end
+local Tab = Window:NewTab("Main Tab")
+local Section = Tab:NewSection("Ringta teleports ( not mine )")
+Section:NewButton("Teleport to Castle", "Ringtà", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.github.io/refs/heads/main/FASTCASTLE.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Teleport to telsa", "Ringtá", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ringtaa/tptotesla.github.io/refs/heads/main/Tptotesla.lua'))()
+    print("Clicked")
+end)
+Section:NewButton("Teleport to Stearlingtown", "Ringtá", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ringtaa/sterlingnotifcation.github.io/refs/heads/main/Sterling.lua'))()
+    print("Clicked")
+end)
+Section:NewButton("Teleport to Barn", "Ringtá", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/tpfarm.github.io/refs/heads/main/tptofarm.lua"))()
+    print("Clicked")
+end)
+Section:NewButton("Teleport to train", "Ringtá", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ringtaa/train.github.io/refs/heads/main/train.lua'))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Second Tab")
+local Section = Tab:NewSection("Others Script")
+Section:NewButton("Thien hub", "credits to thein for the best auto bond", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiennrb7/Script/refs/heads/main/autobond"))()
+    print("Clicked")
+end)
+local Section = Tab:NewSection("made by ringta")
+Section:NewButton("pacifist", "This script give you 18 stars", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/newpacifisct/refs/heads/main/newpacifisct.lua"))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Third Tab")
+local Section = Tab:NewSection("Other game script")
+Section:NewButton("Zombie Lab (1) ", "ZL", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Zombie-lab-Optimization-Update-Zombie-lab-script-33473"))()
+    print("Clicked")
+end)
+Section:NewButton("zombie lab (2) ", "manface", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ManFaceScript/ManFaceScript/refs/heads/main/Zombie%20Lab%20-%20ManFaceScript%20V1.25"))()
+    print("Clicked")
+end)
+Section:NewButton("Zombie lab (3) ", "bytehub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/screengui/bytehub/refs/heads/main/loader.lua",true))()
+    print("Clicked")
+end)
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Toggle"
+Toggle.TextColor3 = Color3.fromRGB(456, 456, 456)
+Toggle.TextSize = 29.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+ 
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
