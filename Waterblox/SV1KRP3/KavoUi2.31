@@ -73,6 +73,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Prizz-Life-33936
     print("Clicked")
 end)
 local Tab = Window:NewTab("Character Settings")
+local Section = Tab:NewSection("change your Character settings for fast")
 Section:NewSlider("Walkspeed", "change your Walkspeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
