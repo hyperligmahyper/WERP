@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Catscript", "Deep")
+local Window = Library.CreateLib("Catscript", "GrapeTheme")
 -- Make UI draggable
 task.wait(1)
 for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
@@ -70,6 +70,17 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Tiger-Admin-2025
 end)
 Section:NewButton("Prison Life (2)", "prizz life", function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Prizz-Life-33936"))()
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Character Settings")
+Section:NewSlider("Walkspeed", "change your Walkspeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("Jumpower", "Change your Jumpower", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.Jumpower = s
+end)
+Section:NewButton("Catscript-Fly", "This fly will not be bypassed in other game", function()
+loadstring(game: HttpGet("https://raw.githubusercontent.com/hyperligmahyper/Fly-GUI/refs/heads/main/Waterblox/Catscript/Universal/Kavoui2.31")()
     print("Clicked")
 end)
 local ScreenGui = Instance.new("ScreenGui")
