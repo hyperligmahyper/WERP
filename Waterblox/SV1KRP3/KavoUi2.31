@@ -19,7 +19,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/castletpfast.
     print("Clicked")
 end)
 Section:NewButton("Teleport to telsa", "Ringtá", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ringtaa/tptotesla.github.io/refs/heads/main/Tptotesla.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ringtaa/tptotesla.git f*** youhub.io/refs/heads/main/Tptotesla.lua'))()
     print("Clicked")
 end)
 Section:NewButton("Teleport to Stearlingtown", "Ringtá", function()
